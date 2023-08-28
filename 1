@@ -1,0 +1,101 @@
+Q1
+#include <iostream>
+
+int main() {
+    std::cout << "Hello Students" << std::endl;
+    return 0;
+}
+Q2
+#include <iostream>
+
+int main() {
+    std::cout << "Hello" << std::endl;
+    std::cout << "Students" << std::endl;
+    return 0;
+}
+Q3
+#include <iostream>
+
+int main() {
+    std::cout << "\"MySirG\"" << std::endl;
+    return 0;
+}
+Q4
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double radius;
+    std::cout << "Enter the radius of the circle: ";
+    std::cin >> radius;
+
+    double area = M_PI * radius * radius;
+    std::cout << "Area of circle is " << area << " having the radius " << radius << std::endl;
+
+    return 0;
+}
+Q5
+#include <iostream>
+#include <cstring>
+
+int main() {
+    char str[100];
+    std::cout << "Enter a string: ";
+    std::cin.getline(str, 100);
+
+    int length = strlen(str);
+    std::cout << "Length of the string is " << length << std::endl;
+
+    return 0;
+}
+Q6
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Hello, \"" << name << "\"" << std::endl;
+
+    return 0;
+}
+Q7
+#include <iostream>
+
+int main() {
+    std::cout << "%d" << std::endl;
+    return 0;
+}
+Q8
+#include <iostream>
+
+int main() {
+    std::cout << "\\n" << std::endl;
+    return 0;
+}
+Q9
+#include <iostream>
+
+int main() {
+    std::cout << "\\\\" << std::endl;
+    return 0;
+}
+Q10
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string inputDate;
+    std::cout << "Enter date in DD/MM/YYYY format: ";
+    std::getline(std::cin, inputDate);
+
+    std::string day = inputDate.substr(0, 2);
+    std::string month = inputDate.substr(3, 2);
+    std::string year = inputDate.substr(6, 4);
+
+    std::cout << "Day - " << day << " , Month - " << month << " , Year - " << year << std::endl;
+
+    return 0;
+}
